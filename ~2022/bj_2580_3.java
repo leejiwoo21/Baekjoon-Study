@@ -1,20 +1,20 @@
 
 /*
- * ½ºµµÄí´Â 18¼¼±â ½ºÀ§½º ¼öÇÐÀÚ°¡ ¸¸µç '¶óÆ¾ »ç°¢Çü'ÀÌ¶û ÆÛÁñ¿¡¼­ À¯·¡ÇÑ °ÍÀ¸·Î ÇöÀç ¸¹Àº ÀÎ±â¸¦ ´©¸®°í ÀÖ´Ù. ÀÌ °ÔÀÓÀº ¾Æ·¡ ±×¸²°ú °°ÀÌ °¡·Î, ¼¼·Î °¢°¢ 9°³¾¿ ÃÑ 81°³ÀÇ ÀÛÀº Ä­À¸·Î ÀÌ·ç¾îÁø Á¤»ç°¢Çü ÆÇ À§¿¡¼­ ÀÌ·ïÁö´Âµ¥, °ÔÀÓ ½ÃÀÛ Àü ÀÏºÎ Ä­¿¡´Â 1ºÎÅÍ 9±îÁöÀÇ ¼ýÀÚ Áß ÇÏ³ª°¡ ¾²¿© ÀÖ´Ù.
+ * ìŠ¤ë„ì¿ ëŠ” 18ì„¸ê¸° ìŠ¤ìœ„ìŠ¤ ìˆ˜í•™ìžê°€ ë§Œë“  'ë¼í‹´ ì‚¬ê°í˜•'ì´ëž‘ í¼ì¦ì—ì„œ ìœ ëž˜í•œ ê²ƒìœ¼ë¡œ í˜„ìž¬ ë§Žì€ ì¸ê¸°ë¥¼ ëˆ„ë¦¬ê³  ìžˆë‹¤. ì´ ê²Œìž„ì€ ì•„ëž˜ ê·¸ë¦¼ê³¼ ê°™ì´ ê°€ë¡œ, ì„¸ë¡œ ê°ê° 9ê°œì”© ì´ 81ê°œì˜ ìž‘ì€ ì¹¸ìœ¼ë¡œ ì´ë£¨ì–´ì§„ ì •ì‚¬ê°í˜• íŒ ìœ„ì—ì„œ ì´ë¤„ì§€ëŠ”ë°, ê²Œìž„ ì‹œìž‘ ì „ ì¼ë¶€ ì¹¸ì—ëŠ” 1ë¶€í„° 9ê¹Œì§€ì˜ ìˆ«ìž ì¤‘ í•˜ë‚˜ê°€ ì“°ì—¬ ìžˆë‹¤.
  * 
- * ³ª¸ÓÁö ºó Ä­À» Ã¤¿ì´Â ¹æ½ÄÀº ´ÙÀ½°ú °°´Ù.
+ * ë‚˜ë¨¸ì§€ ë¹ˆ ì¹¸ì„ ì±„ìš°ëŠ” ë°©ì‹ì€ ë‹¤ìŒê³¼ ê°™ë‹¤.
 
-°¢°¢ÀÇ °¡·ÎÁÙ°ú ¼¼·ÎÁÙ¿¡´Â 1ºÎÅÍ 9±îÁöÀÇ ¼ýÀÚ°¡ ÇÑ ¹ø¾¿¸¸ ³ªÅ¸³ª¾ß ÇÑ´Ù.
-±½Àº ¼±À¸·Î ±¸ºÐµÇ¾î ÀÖ´Â 3x3 Á¤»ç°¢Çü ¾È¿¡µµ 1ºÎÅÍ 9±îÁöÀÇ ¼ýÀÚ°¡ ÇÑ ¹ø¾¿¸¸ ³ªÅ¸³ª¾ß ÇÑ´Ù.
-°ÔÀÓ ½ÃÀÛ Àü ½ºµµÄí ÆÇ¿¡ ¾²¿© ÀÖ´Â ¼ýÀÚµéÀÇ Á¤º¸°¡ ÁÖ¾îÁú ¶§ ¸ðµç ºó Ä­ÀÌ Ã¤¿öÁø ÃÖÁ¾ ¸ð½ÀÀ» Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
+ê°ê°ì˜ ê°€ë¡œì¤„ê³¼ ì„¸ë¡œì¤„ì—ëŠ” 1ë¶€í„° 9ê¹Œì§€ì˜ ìˆ«ìžê°€ í•œ ë²ˆì”©ë§Œ ë‚˜íƒ€ë‚˜ì•¼ í•œë‹¤.
+êµµì€ ì„ ìœ¼ë¡œ êµ¬ë¶„ë˜ì–´ ìžˆëŠ” 3x3 ì •ì‚¬ê°í˜• ì•ˆì—ë„ 1ë¶€í„° 9ê¹Œì§€ì˜ ìˆ«ìžê°€ í•œ ë²ˆì”©ë§Œ ë‚˜íƒ€ë‚˜ì•¼ í•œë‹¤.
+ê²Œìž„ ì‹œìž‘ ì „ ìŠ¤ë„ì¿  íŒì— ì“°ì—¬ ìžˆëŠ” ìˆ«ìžë“¤ì˜ ì •ë³´ê°€ ì£¼ì–´ì§ˆ ë•Œ ëª¨ë“  ë¹ˆ ì¹¸ì´ ì±„ì›Œì§„ ìµœì¢… ëª¨ìŠµì„ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì‹œì˜¤.
 
-ÀÔ·Â
-¾ÆÈ© ÁÙ¿¡ °ÉÃÄ ÇÑ ÁÙ¿¡ 9°³¾¿ °ÔÀÓ ½ÃÀÛ Àü ½ºµµÄíÆÇ °¢ ÁÙ¿¡ ¾²¿© ÀÖ´Â ¼ýÀÚ°¡ ÇÑ Ä­¾¿ ¶ç¿ö¼­ Â÷·Ê·Î ÁÖ¾îÁø´Ù. ½ºµµÄí ÆÇÀÇ ºó Ä­ÀÇ °æ¿ì¿¡´Â 0ÀÌ ÁÖ¾îÁø´Ù. ½ºµµÄí ÆÇÀ» ±ÔÄ¢´ë·Î Ã¤¿ï ¼ö ¾ø´Â °æ¿ìÀÇ ÀÔ·ÂÀº ÁÖ¾îÁöÁö ¾Ê´Â´Ù.
+ìž…ë ¥
+ì•„í™‰ ì¤„ì— ê±¸ì³ í•œ ì¤„ì— 9ê°œì”© ê²Œìž„ ì‹œìž‘ ì „ ìŠ¤ë„ì¿ íŒ ê° ì¤„ì— ì“°ì—¬ ìžˆëŠ” ìˆ«ìžê°€ í•œ ì¹¸ì”© ë„ì›Œì„œ ì°¨ë¡€ë¡œ ì£¼ì–´ì§„ë‹¤. ìŠ¤ë„ì¿  íŒì˜ ë¹ˆ ì¹¸ì˜ ê²½ìš°ì—ëŠ” 0ì´ ì£¼ì–´ì§„ë‹¤. ìŠ¤ë„ì¿  íŒì„ ê·œì¹™ëŒ€ë¡œ ì±„ìš¸ ìˆ˜ ì—†ëŠ” ê²½ìš°ì˜ ìž…ë ¥ì€ ì£¼ì–´ì§€ì§€ ì•ŠëŠ”ë‹¤.
 
-Ãâ·Â
-¸ðµç ºó Ä­ÀÌ Ã¤¿öÁø ½ºµµÄí ÆÇÀÇ ÃÖÁ¾ ¸ð½ÀÀ» ¾ÆÈ© ÁÙ¿¡ °ÉÃÄ ÇÑ ÁÙ¿¡ 9°³¾¿ ÇÑ Ä­¾¿ ¶ç¿ö¼­ Ãâ·ÂÇÑ´Ù.
+ì¶œë ¥
+ëª¨ë“  ë¹ˆ ì¹¸ì´ ì±„ì›Œì§„ ìŠ¤ë„ì¿  íŒì˜ ìµœì¢… ëª¨ìŠµì„ ì•„í™‰ ì¤„ì— ê±¸ì³ í•œ ì¤„ì— 9ê°œì”© í•œ ì¹¸ì”© ë„ì›Œì„œ ì¶œë ¥í•œë‹¤.
 
-½ºµµÄí ÆÇÀ» Ã¤¿ì´Â ¹æ¹ýÀÌ ¿©·µÀÎ °æ¿ì´Â ±× Áß ÇÏ³ª¸¸À» Ãâ·ÂÇÑ´Ù.
+ìŠ¤ë„ì¿  íŒì„ ì±„ìš°ëŠ” ë°©ë²•ì´ ì—¬ëŸ¿ì¸ ê²½ìš°ëŠ” ê·¸ ì¤‘ í•˜ë‚˜ë§Œì„ ì¶œë ¥í•œë‹¤.
 
  */
 import java.util.ArrayList;
@@ -41,10 +41,10 @@ public class bj_2580_3 {
 	private static void Solve(int[][] map) {
 		for (int i = 0; i < 9; i++) {
 			for (int j = 0; j < 9; j++) {
-				if (blanks[i][j] != null) { // ºóÄ­ÀÌ¶ó¸é
-					while(((int) blanks[i][j].numbers.size() > 0)) { // °¡´ÉÇÑ ¼ýÀÚ ¹è¿­ÀÌ ºó ¹è¿­ÀÌ ¾Æ´Ï°í
-						int n = (int) blanks[i][j].numbers.get(0); // nÀº ¼ýÀÚ¹è¿­ ¸Ç ¾Õ°ª
-						if (test(map, n, i, j)) { // ±× °ªÀÌ µé¾î°¥ ¼ö ÀÖ´Ù¸é
+				if (blanks[i][j] != null) { // ë¹ˆì¹¸ì´ë¼ë©´
+					while(((int) blanks[i][j].numbers.size() > 0)) { // ê°€ëŠ¥í•œ ìˆ«ìž ë°°ì—´ì´ ë¹ˆ ë°°ì—´ì´ ì•„ë‹ˆê³ 
+						int n = (int) blanks[i][j].numbers.get(0); // nì€ ìˆ«ìžë°°ì—´ ë§¨ ì•žê°’
+						if (test(map, n, i, j)) { // ê·¸ ê°’ì´ ë“¤ì–´ê°ˆ ìˆ˜ ìžˆë‹¤ë©´
 							map[i][j] = n;
 							blanks[i][j] = new Blank(i,j,arrr);
 							if((i == 8)&&(j ==8)) {
@@ -52,9 +52,9 @@ public class bj_2580_3 {
 							}
 							Solve(map);
 						}
-						else { // ¸øµé¾î°£´Ù¸é
+						else { // ëª»ë“¤ì–´ê°„ë‹¤ë©´
 							if(blanks[i][j].numbers.size()>0) {
-							blanks[i][j].numbers.remove(0); // ¸Ç ¾Õ°ª »èÁ¦
+							blanks[i][j].numbers.remove(0); // ë§¨ ì•žê°’ ì‚­ì œ
 							}
 							else {
 								break;
@@ -62,7 +62,7 @@ public class bj_2580_3 {
 						}
 					}
 					
-				}else { // °ªÀÌ ÀÖ´Â Ä­ÀÌ¶ó¸é
+				}else { // ê°’ì´ ìžˆëŠ” ì¹¸ì´ë¼ë©´
 					if((i == 8)&&(j==8)) {
 						break;
 					}
@@ -73,12 +73,12 @@ public class bj_2580_3 {
 
 	private static boolean test(int[][] map, int n, int i, int j) {
 		int count = 0;
-		for (int x = 0; x < 9; x++) { // °¡·Î °Ë»ç
+		for (int x = 0; x < 9; x++) { // ê°€ë¡œ ê²€ì‚¬
 			if ((map[x][j] == n) && (x != i)) {
 				count++;
 			}
 		}
-		for (int y = 0; y < 9; y++) { // ¼¼·Î °Ë»ç
+		for (int y = 0; y < 9; y++) { // ì„¸ë¡œ ê²€ì‚¬
 			if ((map[i][y] == n) && (y != j)) {
 				count++;
 			}
@@ -134,22 +134,22 @@ public class bj_2580_3 {
 			for (int j = 0; j < 9; j++) {
 				ArrayList can = new ArrayList();
 				if ((map[i][j] == 0) && (check[i][j] == 0)) {
-					for (int k = 1; k < 10; k++) { // check ÃÊ±âÈ­
+					for (int k = 1; k < 10; k++) { // check ì´ˆê¸°í™”
 						can.add(k);
 					}
-					for (int k = 0; k < 9; k++) { // °¡·Î °Ë»ç
+					for (int k = 0; k < 9; k++) { // ê°€ë¡œ ê²€ì‚¬
 						if (can.contains(map[i][k])) {
 							Integer a = map[i][k];
 							can.remove(a);
 						}
 					}
-					for (int k = 0; k < 9; k++) { // ¼¼·Î °Ë»ç
+					for (int k = 0; k < 9; k++) { // ì„¸ë¡œ ê²€ì‚¬
 						if (can.contains(map[k][j])) {
 							Integer a = map[k][j];
 							can.remove(a);
 						}
 					}
-					// »ç°¢Çü °Ë»ç ½ÃÀÛ
+					// ì‚¬ê°í˜• ê²€ì‚¬ ì‹œìž‘
 					if (i == 0) {
 						if (j == 0) {
 							for (int k = 0; k < 3; k++) {
@@ -207,12 +207,12 @@ public class bj_2580_3 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int[][] map = new int[9][9];
-		for (int i = 0; i < 9; i++) { // ¼ýÀÚµé ÀúÀå
+		for (int i = 0; i < 9; i++) { // ìˆ«ìžë“¤ ì €ìž¥
 			for (int j = 0; j < 9; j++) {
 				map[i][j] = in.nextInt();
 			}
 		}
-		Sudoku(map); // °£´ÜÇÑ ½ºµµÄí ÇØ°á
+		Sudoku(map); // ê°„ë‹¨í•œ ìŠ¤ë„ì¿  í•´ê²°
 		
 		Solve(map);
 		
