@@ -1,8 +1,8 @@
 
 /*
- * 1. ½ÃÀÛÇÏ´Â ¼ø¼­´ë·Î ¹è¿­
- * 2. ÂªÀº ¼ø¼­´ë·Î ¹è¿­
- * 3. »¡¸® ³¡³ª´Â ¼ø¼­´ë·Î ¹è¿­
+ * 1. ì‹œìž‘í•˜ëŠ” ìˆœì„œëŒ€ë¡œ ë°°ì—´
+ * 2. ì§§ì€ ìˆœì„œëŒ€ë¡œ ë°°ì—´
+ * 3. ë¹¨ë¦¬ ëë‚˜ëŠ” ìˆœì„œëŒ€ë¡œ ë°°ì—´
  */
 import java.util.ArrayList;
 import java.util.Scanner;
