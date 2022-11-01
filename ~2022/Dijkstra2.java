@@ -5,7 +5,7 @@ public class Dijkstra2 {
 	static int e = in.nextInt();
 	static int[][] distance = new int[n][n];
 	static int[] d = new int[n];
-	static boolean[] v = new boolean[n]; // �ʱ�ȭ ���ϸ� false
+	static boolean[] v = new boolean[n]; // 초기화 안하면 false
 	
 	public static void setDistance()
 	{
@@ -18,7 +18,7 @@ public class Dijkstra2 {
 				distance[i][j] = 200001;
 			}
 		}
-		for(int i = 0; i<e; i++) // �迭 �Է¹ޱ�
+		for(int i = 0; i<e; i++) // 배열 입력받기
 		{
 			start = in.nextInt() -1; 
 			arrive = in.nextInt() -1;
