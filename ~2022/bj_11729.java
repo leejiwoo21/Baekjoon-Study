@@ -1,21 +1,21 @@
 /*https://www.acmicpc.net/problem/11729
  * 
- * ÇÏ³ëÀÌÅ¾ ¹®Á¦
- * ¼¼ °³ÀÇ Àå´ë°¡ ÀÖ°í Ã¹ ¹øÂ° Àå´ë¿¡´Â ¹Ý°æÀÌ ¼­·Î ´Ù¸¥ n°³ÀÇ ¿øÆÇÀÌ ½×¿© ÀÖ´Ù. 
- * °¢ ¿øÆÇÀº ¹Ý°æÀÌ Å« ¼ø¼­´ë·Î ½×¿©ÀÖ´Ù. ÀÌÁ¦ ¼öµµ½ÂµéÀÌ ´ÙÀ½ ±ÔÄ¢¿¡ µû¶ó Ã¹ ¹øÂ° Àå´ë¿¡¼­ ¼¼ ¹øÂ° Àå´ë·Î ¿Å±â·Á ÇÑ´Ù.
- * ÇÑ ¹ø¿¡ ÇÑ °³ÀÇ ¿øÆÇ¸¸À» ´Ù¸¥ Å¾À¸·Î ¿Å±æ ¼ö ÀÖ´Ù.
- * ½×¾Æ ³õÀº ¿øÆÇÀº Ç×»ó À§ÀÇ °ÍÀÌ ¾Æ·¡ÀÇ °Íº¸´Ù ÀÛ¾Æ¾ß ÇÑ´Ù.
- * ÀÌ ÀÛ¾÷À» ¼öÇàÇÏ´Âµ¥ ÇÊ¿äÇÑ ÀÌµ¿ ¼ø¼­¸¦ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ¶ó. ´Ü, ÀÌµ¿ È½¼ö´Â ÃÖ¼Ò°¡ µÇ¾î¾ß ÇÑ´Ù.
- * -ÀÔ·Â-
- * Ã¹Â° ÁÙ¿¡ Ã¹ ¹øÂ° Àå´ë¿¡ ½×ÀÎ ¿øÆÇÀÇ °³¼ö N (1 ¡Â N ¡Â 20)ÀÌ ÁÖ¾îÁø´Ù.
- * -Ãâ·Â-
- * Ã¹Â° ÁÙ¿¡ ¿Å±ä È½¼ö K¸¦ Ãâ·ÂÇÑ´Ù.
- * µÎ ¹øÂ° ÁÙºÎÅÍ ¼öÇà °úÁ¤À» Ãâ·ÂÇÑ´Ù. µÎ ¹øÂ° ÁÙºÎÅÍ K°³ÀÇ ÁÙ¿¡ °ÉÃÄ µÎ Á¤¼ö A B¸¦ ºóÄ­À» »çÀÌ¿¡ µÎ°í Ãâ·ÂÇÏ´Âµ¥,
- * ÀÌ´Â A¹øÂ° Å¾ÀÇ °¡Àå À§¿¡ ÀÖ´Â ¿øÆÇÀ» B¹øÂ° Å¾ÀÇ °¡Àå À§·Î ¿Å±ä´Ù´Â ¶æÀÌ´Ù.
+ * í•˜ë…¸ì´íƒ‘ ë¬¸ì œ
+ * ì„¸ ê°œì˜ ìž¥ëŒ€ê°€ ìžˆê³  ì²« ë²ˆì§¸ ìž¥ëŒ€ì—ëŠ” ë°˜ê²½ì´ ì„œë¡œ ë‹¤ë¥¸ nê°œì˜ ì›íŒì´ ìŒ“ì—¬ ìžˆë‹¤. 
+ * ê° ì›íŒì€ ë°˜ê²½ì´ í° ìˆœì„œëŒ€ë¡œ ìŒ“ì—¬ìžˆë‹¤. ì´ì œ ìˆ˜ë„ìŠ¹ë“¤ì´ ë‹¤ìŒ ê·œì¹™ì— ë”°ë¼ ì²« ë²ˆì§¸ ìž¥ëŒ€ì—ì„œ ì„¸ ë²ˆì§¸ ìž¥ëŒ€ë¡œ ì˜®ê¸°ë ¤ í•œë‹¤.
+ * í•œ ë²ˆì— í•œ ê°œì˜ ì›íŒë§Œì„ ë‹¤ë¥¸ íƒ‘ìœ¼ë¡œ ì˜®ê¸¸ ìˆ˜ ìžˆë‹¤.
+ * ìŒ“ì•„ ë†“ì€ ì›íŒì€ í•­ìƒ ìœ„ì˜ ê²ƒì´ ì•„ëž˜ì˜ ê²ƒë³´ë‹¤ ìž‘ì•„ì•¼ í•œë‹¤.
+ * ì´ ìž‘ì—…ì„ ìˆ˜í–‰í•˜ëŠ”ë° í•„ìš”í•œ ì´ë™ ìˆœì„œë¥¼ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ë¼. ë‹¨, ì´ë™ íšŸìˆ˜ëŠ” ìµœì†Œê°€ ë˜ì–´ì•¼ í•œë‹¤.
+ * -ìž…ë ¥-
+ * ì²«ì§¸ ì¤„ì— ì²« ë²ˆì§¸ ìž¥ëŒ€ì— ìŒ“ì¸ ì›íŒì˜ ê°œìˆ˜ N (1 â‰¤ N â‰¤ 20)ì´ ì£¼ì–´ì§„ë‹¤.
+ * -ì¶œë ¥-
+ * ì²«ì§¸ ì¤„ì— ì˜®ê¸´ íšŸìˆ˜ Kë¥¼ ì¶œë ¥í•œë‹¤.
+ * ë‘ ë²ˆì§¸ ì¤„ë¶€í„° ìˆ˜í–‰ ê³¼ì •ì„ ì¶œë ¥í•œë‹¤. ë‘ ë²ˆì§¸ ì¤„ë¶€í„° Kê°œì˜ ì¤„ì— ê±¸ì³ ë‘ ì •ìˆ˜ A Bë¥¼ ë¹ˆì¹¸ì„ ì‚¬ì´ì— ë‘ê³  ì¶œë ¥í•˜ëŠ”ë°,
+ * ì´ëŠ” Aë²ˆì§¸ íƒ‘ì˜ ê°€ìž¥ ìœ„ì— ìžˆëŠ” ì›íŒì„ Bë²ˆì§¸ íƒ‘ì˜ ê°€ìž¥ ìœ„ë¡œ ì˜®ê¸´ë‹¤ëŠ” ëœ»ì´ë‹¤.
  */
 
-// ÀÌ ÄÚµå´Â ½Ã°£ÃÊ°ú
-// count ÇÔ¼ö´Â ±¦ÂúÀºµ¥ step¿¡¼­ ºñ±³ÇÒ ¶§ ¿À·¡°É¸®´Â °Í °°´Ù.
+// ì´ ì½”ë“œëŠ” ì‹œê°„ì´ˆê³¼
+// count í•¨ìˆ˜ëŠ” ê´œì°®ì€ë° stepì—ì„œ ë¹„êµí•  ë•Œ ì˜¤ëž˜ê±¸ë¦¬ëŠ” ê²ƒ ê°™ë‹¤.
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -27,7 +27,7 @@ public class bj_11729 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-	static int N = 0; // ¿øÆÇÀÇ °¹¼ö
+	static int N = 0; // ì›íŒì˜ ê°¯ìˆ˜
 	static int all = 1;
 	static int i = 1;
 
@@ -38,7 +38,7 @@ public class bj_11729 {
 		}
 	}
 
-	static void step(int n, int a, int k) { // n°³¸¦ a¹øÂ° Å¾¿¡¼­ k¹øÂ° Å¾À¸·Î ÀÌµ¿
+	static void step(int n, int a, int k) { // nê°œë¥¼ aë²ˆì§¸ íƒ‘ì—ì„œ kë²ˆì§¸ íƒ‘ìœ¼ë¡œ ì´ë™
 		try {
 			if (a == 1) {
 				if (k == 2) {
