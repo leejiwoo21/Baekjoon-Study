@@ -1,20 +1,20 @@
 
 /*
- * ¹®Á¦
-·çºò½º Å¥ºê´Â »ïÂ÷¿ø ÆÛÁñÀÌ´Ù. º¸Åë ·çºò½º Å¥ºê´Â 3¡¿3¡¿3°³ÀÇ ÀÛÀº Á¤À°¸éÃ¼·Î ÀÌ·ç¾îÁ® ÀÖ´Ù. ÆÛÁñÀ» Ç®·Á¸é °¢ ¸é¿¡ ÀÖ´Â ¾ÆÈ© °³ÀÇ ÀÛÀº Á¤À°¸éÃ¼ÀÇ »öÀÌ µ¿ÀÏÇØ¾ß ÇÑ´Ù.
+ * ë¬¸ì œ
+ë£¨ë¹…ìŠ¤ íë¸ŒëŠ” ì‚¼ì°¨ì› í¼ì¦ì´ë‹¤. ë³´í†µ ë£¨ë¹…ìŠ¤ íë¸ŒëŠ” 3Ã—3Ã—3ê°œì˜ ìž‘ì€ ì •ìœ¡ë©´ì²´ë¡œ ì´ë£¨ì–´ì ¸ ìžˆë‹¤. í¼ì¦ì„ í’€ë ¤ë©´ ê° ë©´ì— ìžˆëŠ” ì•„í™‰ ê°œì˜ ìž‘ì€ ì •ìœ¡ë©´ì²´ì˜ ìƒ‰ì´ ë™ì¼í•´ì•¼ í•œë‹¤.
 
-Å¥ºê´Â °¢ ¸éÀ» ¾ç¹æÇâÀ¸·Î 90µµ ¸¸Å­ µ¹¸± ¼ö ÀÖµµ·Ï ¸¸µé¾îÁ® ÀÖ´Ù. È¸ÀüÀÌ ¸¶Ä£ ÀÌÈÄ¿¡´Â, ´Ù¸¥ ¸éÀ» µ¹¸± ¼ö ÀÖ´Ù. ÀÌ·¸°Ô Å¥ºêÀÇ ¼­·Î ´Ù¸¥ ¸éÀ» µ¹¸®´Ù º¸¸é, »öÀ» ¼¯À» ¼ö ÀÖ´Ù.
+íë¸ŒëŠ” ê° ë©´ì„ ì–‘ë°©í–¥ìœ¼ë¡œ 90ë„ ë§Œí¼ ëŒë¦´ ìˆ˜ ìžˆë„ë¡ ë§Œë“¤ì–´ì ¸ ìžˆë‹¤. íšŒì „ì´ ë§ˆì¹œ ì´í›„ì—ëŠ”, ë‹¤ë¥¸ ë©´ì„ ëŒë¦´ ìˆ˜ ìžˆë‹¤. ì´ë ‡ê²Œ íë¸Œì˜ ì„œë¡œ ë‹¤ë¥¸ ë©´ì„ ëŒë¦¬ë‹¤ ë³´ë©´, ìƒ‰ì„ ì„žì„ ìˆ˜ ìžˆë‹¤.
 
-ÀÌ ¹®Á¦¿¡¼­´Â ·çºò½º Å¥ºê°¡ ¸ðµÎ Ç®¸° »óÅÂ¿¡¼­ ½ÃÀÛÇÑ´Ù. À­ ¸éÀº Èò»ö, ¾Æ·§ ¸éÀº ³ë¶õ»ö, ¾Õ ¸éÀº »¡°£»ö, µÞ ¸éÀº ¿À·»Áö»ö, ¿ÞÂÊ ¸éÀº ÃÊ·Ï»ö, ¿À¸¥ÂÊ ¸éÀº ÆÄ¶õ»öÀÌ´Ù.
+ì´ ë¬¸ì œì—ì„œëŠ” ë£¨ë¹…ìŠ¤ íë¸Œê°€ ëª¨ë‘ í’€ë¦° ìƒíƒœì—ì„œ ì‹œìž‘í•œë‹¤. ìœ— ë©´ì€ í°ìƒ‰, ì•„ëž« ë©´ì€ ë…¸ëž€ìƒ‰, ì•ž ë©´ì€ ë¹¨ê°„ìƒ‰, ë’· ë©´ì€ ì˜¤ë Œì§€ìƒ‰, ì™¼ìª½ ë©´ì€ ì´ˆë¡ìƒ‰, ì˜¤ë¥¸ìª½ ë©´ì€ íŒŒëž€ìƒ‰ì´ë‹¤.
 
-·çºò½º Å¥ºê¸¦ µ¹¸° ¹æ¹ýÀÌ ¼ø¼­´ë·Î ÁÖ¾îÁø´Ù. ÀÌ¶§, ¸ðµÎ µ¹¸° ´ÙÀ½¿¡ °¡Àå À­ ¸éÀÇ »ö»óÀ» ±¸ÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
-ÀÔ·Â
-Ã¹Â° ÁÙ¿¡ Å×½ºÆ® ÄÉÀÌ½ºÀÇ °³¼ö°¡ ÁÖ¾îÁø´Ù. Å×½ºÆ® ÄÉÀÌ½º´Â ÃÖ´ë 100°³ÀÌ´Ù. °¢ Å×½ºÆ® ÄÉÀÌ½º´Â ´ÙÀ½°ú °°ÀÌ ±¸¼ºµÇ¾îÁ® ÀÖ´Ù.
+ë£¨ë¹…ìŠ¤ íë¸Œë¥¼ ëŒë¦° ë°©ë²•ì´ ìˆœì„œëŒ€ë¡œ ì£¼ì–´ì§„ë‹¤. ì´ë•Œ, ëª¨ë‘ ëŒë¦° ë‹¤ìŒì— ê°€ìž¥ ìœ— ë©´ì˜ ìƒ‰ìƒì„ êµ¬í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì‹œì˜¤.
+ìž…ë ¥
+ì²«ì§¸ ì¤„ì— í…ŒìŠ¤íŠ¸ ì¼€ì´ìŠ¤ì˜ ê°œìˆ˜ê°€ ì£¼ì–´ì§„ë‹¤. í…ŒìŠ¤íŠ¸ ì¼€ì´ìŠ¤ëŠ” ìµœëŒ€ 100ê°œì´ë‹¤. ê° í…ŒìŠ¤íŠ¸ ì¼€ì´ìŠ¤ëŠ” ë‹¤ìŒê³¼ ê°™ì´ êµ¬ì„±ë˜ì–´ì ¸ ìžˆë‹¤.
 
-Ã¹Â° ÁÙ¿¡ Å¥ºê¸¦ µ¹¸° È½¼ö nÀÌ ÁÖ¾îÁø´Ù. (1 ¡Â n ¡Â 1000)
-µÑÂ° ÁÙ¿¡´Â Å¥ºê¸¦ µ¹¸° ¹æ¹ýÀÌ ÁÖ¾îÁø´Ù. °¢ ¹æ¹ýÀº °ø¹éÀ¸·Î ±¸ºÐµÇ¾îÁ® ÀÖÀ¸¸ç, Ã¹ ¹øÂ° ¹®ÀÚ´Â µ¹¸° ¸éÀÌ´Ù. U: À­ ¸é, D: ¾Æ·§ ¸é, F: ¾Õ ¸é, B: µÞ ¸é, L: ¿ÞÂÊ ¸é, R: ¿À¸¥ÂÊ ¸éÀÌ´Ù. µÎ ¹øÂ° ¹®ÀÚ´Â µ¹¸° ¹æÇâÀÌ´Ù. +ÀÎ °æ¿ì¿¡´Â ½Ã°è ¹æÇâ (±× ¸éÀ» ¹Ù¶óºÃÀ» ¶§°¡ ±âÁØ), -ÀÎ °æ¿ì¿¡´Â ¹Ý½Ã°è ¹æÇâÀÌ´Ù.
-Ãâ·Â
-°¢ Å×½ºÆ® ÄÉÀÌ½º¿¡ ´ëÇØ¼­ Å¥ºê¸¦ ¸ðµÎ µ¹¸° ÈÄÀÇ À­ ¸éÀÇ »ö»óÀ» Ãâ·ÂÇÑ´Ù. Ã¹ ¹øÂ° ÁÙ¿¡´Â µÞ ¸é°ú Á¢ÇÏ´Â Ä­ÀÇ »öÀ» Ãâ·ÂÇÏ°í, µÎ ¹øÂ°, ¼¼ ¹øÂ° ÁÙÀº ¼ø¼­´ë·Î Ãâ·ÂÇÏ¸é µÈ´Ù. Èò»öÀº w, ³ë¶õ»öÀº y, »¡°£»öÀº r, ¿À·»Áö»öÀº o, ÃÊ·Ï»öÀº g, ÆÄ¶õ»öÀº b.
+ì²«ì§¸ ì¤„ì— íë¸Œë¥¼ ëŒë¦° íšŸìˆ˜ nì´ ì£¼ì–´ì§„ë‹¤. (1 â‰¤ n â‰¤ 1000)
+ë‘˜ì§¸ ì¤„ì—ëŠ” íë¸Œë¥¼ ëŒë¦° ë°©ë²•ì´ ì£¼ì–´ì§„ë‹¤. ê° ë°©ë²•ì€ ê³µë°±ìœ¼ë¡œ êµ¬ë¶„ë˜ì–´ì ¸ ìžˆìœ¼ë©°, ì²« ë²ˆì§¸ ë¬¸ìžëŠ” ëŒë¦° ë©´ì´ë‹¤. U: ìœ— ë©´, D: ì•„ëž« ë©´, F: ì•ž ë©´, B: ë’· ë©´, L: ì™¼ìª½ ë©´, R: ì˜¤ë¥¸ìª½ ë©´ì´ë‹¤. ë‘ ë²ˆì§¸ ë¬¸ìžëŠ” ëŒë¦° ë°©í–¥ì´ë‹¤. +ì¸ ê²½ìš°ì—ëŠ” ì‹œê³„ ë°©í–¥ (ê·¸ ë©´ì„ ë°”ë¼ë´¤ì„ ë•Œê°€ ê¸°ì¤€), -ì¸ ê²½ìš°ì—ëŠ” ë°˜ì‹œê³„ ë°©í–¥ì´ë‹¤.
+ì¶œë ¥
+ê° í…ŒìŠ¤íŠ¸ ì¼€ì´ìŠ¤ì— ëŒ€í•´ì„œ íë¸Œë¥¼ ëª¨ë‘ ëŒë¦° í›„ì˜ ìœ— ë©´ì˜ ìƒ‰ìƒì„ ì¶œë ¥í•œë‹¤. ì²« ë²ˆì§¸ ì¤„ì—ëŠ” ë’· ë©´ê³¼ ì ‘í•˜ëŠ” ì¹¸ì˜ ìƒ‰ì„ ì¶œë ¥í•˜ê³ , ë‘ ë²ˆì§¸, ì„¸ ë²ˆì§¸ ì¤„ì€ ìˆœì„œëŒ€ë¡œ ì¶œë ¥í•˜ë©´ ëœë‹¤. í°ìƒ‰ì€ w, ë…¸ëž€ìƒ‰ì€ y, ë¹¨ê°„ìƒ‰ì€ r, ì˜¤ë Œì§€ìƒ‰ì€ o, ì´ˆë¡ìƒ‰ì€ g, íŒŒëž€ìƒ‰ì€ b.
  */
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -33,11 +33,11 @@ public class bj_5373_2 {
 	static HashMap<Integer, String> L = new HashMap<Integer, String>();
 	static HashMap<Integer, String> F = new HashMap<Integer, String>();
 	static HashMap<Integer, String> B = new HashMap<Integer, String>();
-	static HashMap<Integer, String> C = new HashMap<Integer, String>(); // C = CopyÀÇ ¾àÀÚ
+	static HashMap<Integer, String> C = new HashMap<Integer, String>(); // C = Copyì˜ ì•½ìž
 
 	private static void Turn(int n) throws IOException {
 
-		String[] s = br.readLine().split(" "); // È¸Àü ÀúÀå
+		String[] s = br.readLine().split(" "); // íšŒì „ ì €ìž¥
 		
 		for (int i = 0; i < n; i++) {
 			String turn = s[i];
@@ -46,7 +46,7 @@ public class bj_5373_2 {
 				for (int j = 1; j < 10; j++) {
 					C.put(j, U.get(j));
 				}
-				// Á¤¸é
+				// ì •ë©´
 				U.put(1, C.get(3));
 				U.put(2, C.get(6));
 				U.put(3, C.get(9));
@@ -56,7 +56,7 @@ public class bj_5373_2 {
 				U.put(7, C.get(1));
 				U.put(8, C.get(4));
 				U.put(9, C.get(7));
-				// ¿·¸é
+				// ì˜†ë©´
 				for (int j = 1; j < 4; j++) {
 					C.put(j, F.get(j));
 				}
@@ -111,7 +111,7 @@ public class bj_5373_2 {
 				for (int j = 1; j < 10; j++) {
 					C.put(j, F.get(j));
 				}
-				// Á¤¸é
+				// ì •ë©´
 				F.put(1, C.get(3));
 				F.put(2, C.get(6));
 				F.put(3, C.get(9));
@@ -121,7 +121,7 @@ public class bj_5373_2 {
 				F.put(7, C.get(1));
 				F.put(8, C.get(4));
 				F.put(9, C.get(7));
-				// ¿·¸é
+				// ì˜†ë©´
 				for (int j = 1; j < 4; j++) {
 					C.put(j, D.get(j));
 				}
@@ -180,7 +180,7 @@ public class bj_5373_2 {
 				for (int j = 1; j < 10; j++) {
 					C.put(j, L.get(j));
 				}
-				// Á¤¸é
+				// ì •ë©´
 				L.put(1, C.get(3));
 				L.put(2, C.get(6));
 				L.put(3, C.get(9));
@@ -190,7 +190,7 @@ public class bj_5373_2 {
 				L.put(7, C.get(1));
 				L.put(8, C.get(4));
 				L.put(9, C.get(7));
-				// ¿·¸é
+				// ì˜†ë©´
 
 				C.put(1, F.get(1));
 				C.put(4, F.get(4));
@@ -225,7 +225,7 @@ public class bj_5373_2 {
 				L.put(7, C.get(9));
 				L.put(8, C.get(6));
 				L.put(9, C.get(3));
-				// ¿·¸é
+				// ì˜†ë©´
 
 				C.put(1, F.get(1));
 				C.put(4, F.get(4));
@@ -253,7 +253,7 @@ public class bj_5373_2 {
 				for (int j = 1; j < 10; j++) {
 					C.put(j, R.get(j));
 				}
-				// Á¤¸é
+				// ì •ë©´
 				R.put(1, C.get(3));
 				R.put(2, C.get(6));
 				R.put(3, C.get(9));
@@ -263,7 +263,7 @@ public class bj_5373_2 {
 				R.put(7, C.get(1));
 				R.put(8, C.get(4));
 				R.put(9, C.get(7));
-				// ¿·¸é
+				// ì˜†ë©´
 
 				C.put(3, F.get(3));
 				C.put(6, F.get(6));
@@ -298,7 +298,7 @@ public class bj_5373_2 {
 				R.put(7, C.get(9));
 				R.put(8, C.get(6));
 				R.put(9, C.get(3));
-				// ¿·¸é
+				// ì˜†ë©´
 
 				C.put(3, F.get(3));
 				C.put(6, F.get(6));
@@ -325,7 +325,7 @@ public class bj_5373_2 {
 				for (int j = 1; j < 10; j++) {
 					C.put(j, B.get(j));
 				}
-				// Á¤¸é
+				// ì •ë©´
 				B.put(1, C.get(3));
 				B.put(2, C.get(6));
 				B.put(3, C.get(9));
@@ -335,7 +335,7 @@ public class bj_5373_2 {
 				B.put(7, C.get(1));
 				B.put(8, C.get(4));
 				B.put(9, C.get(7));
-				// ¿·¸é
+				// ì˜†ë©´
 
 				C.put(1, U.get(1));
 				C.put(2, U.get(2));
@@ -370,7 +370,7 @@ public class bj_5373_2 {
 				B.put(7, C.get(9));
 				B.put(8, C.get(6));
 				B.put(9, C.get(3));
-				// ¿·¸é
+				// ì˜†ë©´
 
 				C.put(1, U.get(1));
 				C.put(2, U.get(2));
@@ -397,7 +397,7 @@ public class bj_5373_2 {
 				for (int j = 1; j < 10; j++) {
 					C.put(j, D.get(j));
 				}
-				// Á¤¸é
+				// ì •ë©´
 				D.put(1, C.get(3));
 				D.put(2, C.get(6));
 				D.put(3, C.get(9));
@@ -407,7 +407,7 @@ public class bj_5373_2 {
 				D.put(7, C.get(1));
 				D.put(8, C.get(4));
 				D.put(9, C.get(7));
-				// ¿·¸é
+				// ì˜†ë©´
 
 				C.put(7, F.get(7));
 				C.put(8, F.get(8));
@@ -442,7 +442,7 @@ public class bj_5373_2 {
 				D.put(7, C.get(9));
 				D.put(8, C.get(6));
 				D.put(9, C.get(3));
-				// ¿·¸é
+				// ì˜†ë©´
 
 				C.put(7, F.get(7));
 				C.put(8, F.get(8));
@@ -502,15 +502,15 @@ public class bj_5373_2 {
 
 	public static void main(String[] args) throws IOException {
 
-		int T = Integer.valueOf(br.readLine()); // Å×½ºÆ®ÄÉÀÌ½º ( 1<= T <= 100)
+		int T = Integer.valueOf(br.readLine()); // í…ŒìŠ¤íŠ¸ì¼€ì´ìŠ¤ ( 1<= T <= 100)
 
-		// µ¹¸° ¸é = U: À­ ¸é D: ¾Æ·§ ¸é F: ¾Õ ¸é B: µÞ ¸é L: ¿ÞÂÊ ¸é R: ¿À¸¥ÂÊ ¸é
-		// µ¹¸° ¹æÇâ = +: ½Ã°è¹æÇâ -: ¹Ý½Ã°è¹æÇâ
-		// À­¸éÀÇ »ö»óÀ» Ãâ·Â
+		// ëŒë¦° ë©´ = U: ìœ— ë©´ D: ì•„ëž« ë©´ F: ì•ž ë©´ B: ë’· ë©´ L: ì™¼ìª½ ë©´ R: ì˜¤ë¥¸ìª½ ë©´
+		// ëŒë¦° ë°©í–¥ = +: ì‹œê³„ë°©í–¥ -: ë°˜ì‹œê³„ë°©í–¥
+		// ìœ—ë©´ì˜ ìƒ‰ìƒì„ ì¶œë ¥
 
 		while (T-- > 0) {
 			start();
-			int n = Integer.valueOf(br.readLine()); // turn È½¼ö
+			int n = Integer.valueOf(br.readLine()); // turn íšŸìˆ˜
 			Turn(n);
 
 			System.out.print(U.get(1));
