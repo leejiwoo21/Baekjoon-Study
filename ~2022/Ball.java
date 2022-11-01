@@ -20,7 +20,7 @@ public class Ball {
 		int a = 0;
 		ArrayList arr = new ArrayList();
 		
-		for(int i=0;i<N; i++) //¿ÞÂÊÀ¸·Î R¸ðÀ¸±â
+		for(int i=0;i<N; i++) //ì™¼ìª½ìœ¼ë¡œ Rëª¨ìœ¼ê¸°
 		{
 			if(ball[i].equals("R") && start == 1)
 			{
@@ -36,7 +36,7 @@ public class Ball {
 		} 
 		start = 0;
 		
-		for(int i=0;i<N; i++) //¿ÞÂÊÀ¸·Î B¸ðÀ¸±â
+		for(int i=0;i<N; i++) //ì™¼ìª½ìœ¼ë¡œ Bëª¨ìœ¼ê¸°
 		{
 			if(ball[i].equals("B") && start == 1)
 			{
@@ -52,7 +52,7 @@ public class Ball {
 		} 
 		start = 0;
 		
-		for(int i= N-1; i>-1; i--) // ¿À¸¥ÂÊÀ¸·Î R¸ðÀ¸±â
+		for(int i= N-1; i>-1; i--) // ì˜¤ë¥¸ìª½ìœ¼ë¡œ Rëª¨ìœ¼ê¸°
 		{
 			if(ball[i].equals("R") && start == 1)
 			{
@@ -68,7 +68,7 @@ public class Ball {
 		} 
 		start = 0;
 		
-		for(int i=N-1;i >-1; i--) //¿À¸¥ÂÊÀ¸·Î B¸ðÀ¸±â
+		for(int i=N-1;i >-1; i--) //ì˜¤ë¥¸ìª½ìœ¼ë¡œ Bëª¨ìœ¼ê¸°
 		{
 			if(ball[i].equals("B") && start == 1)
 			{
