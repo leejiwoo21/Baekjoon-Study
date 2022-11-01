@@ -13,7 +13,7 @@ public class Game {
 		long x2 = 0;
 		long y2 = 0;
 		long mid = 0;
-		if (99 <= z1) { // 0³ª´©±â ¹æÁö
+		if (99 <= z1) { // 0Â³ÂªÂ´Â©Â±Ã¢ Â¹Ã¦ÃÃ¶
 			System.out.println(-1);
 		} else {
 			while (a<=b) {
