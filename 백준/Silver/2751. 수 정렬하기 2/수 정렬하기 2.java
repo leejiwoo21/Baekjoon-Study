@@ -11,29 +11,26 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.Scanner;
 
 public class Main {
 
-	public static void main(String[] args) {
-
-		Scanner sc = new Scanner(System.in);
-		StringBuilder sb = new StringBuilder();
-		int N = sc.nextInt();
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw  = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		ArrayList<Integer> list = new ArrayList<>();
-	
-		for(int i = 0; i < N; i++) {
-			list.add(sc.nextInt());
+		int n = Integer.valueOf(br.readLine());
+		ArrayList<Integer> arr = new ArrayList<>();
+		for(int i =0; i<n; i++) {
+			arr.add(Integer.parseInt(br.readLine()));
 		}
+		Collections.sort(arr);
 		
-		Collections.sort(list);
-
-		for(Integer c : list) {
-			sb.append(c).append("\n");
+		for(int num : arr) {
+			bw.write(String.valueOf(num) + "\n");
 		}
-		
-		System.out.println(sb);
+		bw.flush();
+		bw.close();
+
 	}
 		
 }
