@@ -27,17 +27,17 @@ public class Main {
 		long high = max;
 		long low = 0;
 		long h = 0;
-		while(high >= low) {
+		while(high > low) {
 			h = (high+low)/2;
 			long sum = Sum(trees,N,h);
-			if( M > sum ) { // 나무가 부족한 경우 > 높이를 내려야 한다
-				high = h-1;
-			}
-			else {
+			if( M <= sum ) { // 올라감
 				low = h+1;
 			}
+			else { // 내려감
+				high = h;
+			}
 		}
-		System.out.println(high);
+		System.out.println(low-1);
 	}
 	
 	private static long Sum(long[] trees, long N, long h) {
