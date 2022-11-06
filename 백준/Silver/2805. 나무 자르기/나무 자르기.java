@@ -1,44 +1,52 @@
 import java.util.Scanner;
+import java.util.stream.Stream;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter; 
 
 public class Main {
-    private static int N;
-    private static int M;
-    private static int[] trees;
-    private static long max = 0;
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        N = scanner.nextInt();
-        M = scanner.nextInt();
-
-        trees = new int[N + 1];
-
-        for (int i = 1; i <= N; i++) {
-            trees[i] = scanner.nextInt();
-            max = Math.max(max, trees[i]);
-        }
-
-        long start = 0;
-        long end = max;
-
-        while (start <= end) {
-            long mid = (start + end) / 2;
-            long sum = 0;
-
-            for (int tree : trees) {
-                if (tree > mid) {
-                    sum += tree - mid;
-                }
-            }
-
-            if (sum >= M) {
-                start = mid + 1;
-            } else {
-                end = mid - 1;
-            }
-        }
-
-        System.out.println(end);
-    }
+	public static void main(String[] args) throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));	
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		String[] str = br.readLine().split(" ");
+		long N = Integer.parseInt(str[0]);
+		long M = Long.parseLong(str[1]);
+		long max =0;
+		str = br.readLine().split(" ");
+		long[] trees = new long[1000001];
+		long n = 0;
+		for(int i=0; i<N; i++) {
+			n = Long.parseLong(str[i]);
+			if(max < n) max = n;
+			trees[i] = n;
+		}
+		
+		long high = max;
+		long low = 0;
+		long h = 0;
+		while(high >= low) {
+			h = (high+low)/2;
+			long sum = Sum(trees,N,h);
+			if( M > sum ) { // 나무가 부족한 경우 > 높이를 내려야 한다
+				high = h-1;
+			}
+			else {
+				low = h+1;
+			}
+		}
+		System.out.println(high);
+	}
+	
+	private static long Sum(long[] trees, long N, long h) {
+		long sum = 0;
+		for(int i=0; i<N; i++) {
+			if(trees[i]>h) sum += trees[i]-h;
+			if(sum > 2000000001) return sum;
+		}
+		return sum;
+	}
+	
 }
