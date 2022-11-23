@@ -23,7 +23,7 @@ public class Main {
 		// 왼쪽(앞)에 더 큰 사람이 몇 명 있는가
 		int left[] = Stream.of(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
 		int line[] = new int[N+1];
-		Arrays.fill(line, N);
+		Arrays.fill(line, N); // 빈 자리는 나보다 큰 사람이라고 가정함
 		
 		//키작은 사람부터 줄새움
 		for(int i=1; i<N; i++) {
